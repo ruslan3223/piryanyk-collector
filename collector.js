@@ -22,7 +22,7 @@ const SAVE_INTERVAL_MS = 15000;          // як часто писати кож�
 const KEEP_MS = 26 * 3600 * 1000;        // скільки зберігати історію
 const CLEANUP_EVERY_MS = 3600 * 1000;    // чистка старого раз на годину
 const TEMP_OFFSETS = { 6: -8, 8: -7 };   // та сама корекція, що й на сайті
-const SENSORS = [7, 8];                  // що пишемо в базу
+const SENSORS = [5,6,7, 8];                  // що пишемо в базу
 const RUN_SECONDS = parseInt(process.env.RUN_SECONDS || '0', 10);
 
 if (!SUPABASE_URL || !SUPABASE_KEY || !MQTT_PASS) {
